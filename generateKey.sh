@@ -14,5 +14,5 @@ cp ./banque/bankpublic.key ./vendeur/
 #cat ./banque/clientpublic.key | openssl rsautl -encrypt -inkey ./banque/bankprivate.key | base64 > cheque.txt
 
 #
-cat client/clientpublic.key | openssl enc -e -aes-128-cbc -pass pass:toto > clientpubkeyAES.bin
-echo "toto" | openssl rsautl -encrypt -inkey banque/bankprivate.key | base64 > chequeByBank.key
+cat client/clientpublic.key | openssl enc -e -aes-128-cbc -pass pass:unmdpalacon > clientpubkeyAES.bin
+echo "unmdpalacon" | openssl rsautl -encrypt -inkey banque/bankprivate.key | base64 > chequeByBank.key
